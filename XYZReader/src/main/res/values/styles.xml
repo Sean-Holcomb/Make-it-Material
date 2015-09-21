@@ -18,7 +18,7 @@
 <resources>
 
     <style name="Theme.Bacon" parent="@style/Theme.AppCompat.Light.NoActionBar">
-
+        <item name="android:fontFamily">sans-serif-condensed</item>
     </style>
 
     <style name="Theme.Bacon.Detail">
@@ -28,6 +28,7 @@
     <style name="Theme.Meat" parent="@style/Theme.AppCompat.Light.DarkActionBar">
         <item name="colorPrimary">@color/theme_primary</item>
         <item name="android:actionBarStyle">@style/MeatActionBar</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
     </style>
 
     <!-- ActionBar styles -->

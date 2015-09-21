@@ -65,7 +65,7 @@
     <color name="material_deep_teal_500">#ff009688</color>
     <!-- From: file:/Users/seanholcomb/AndroidStudioProjects/xyzreader/XYZReader/src/main/res/values/colors.xml -->
     <eat-comment/>
-    <color name="photo_placeholder">#CDDC39</color>
+    <color name="photo_placeholder">#FFF</color>
     <!-- From: file:/Users/seanholcomb/AndroidStudioProjects/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values/values.xml -->
     <eat-comment/>
     <color name="primary_dark_material_dark">#ff000000</color>
@@ -86,7 +86,7 @@
     <color name="switch_thumb_normal_material_light">#fff1f1f1</color>
     <!-- From: file:/Users/seanholcomb/AndroidStudioProjects/xyzreader/XYZReader/src/main/res/values/colors.xml -->
     <eat-comment/>
-    <color name="theme_accent">#673AB7</color>
+    <color name="theme_accent">#D50000</color>
     <color name="theme_primary">#F44336</color>
     <color name="theme_primary_dark">#B71C1C</color>
     <color name="theme_primary_light">#FFCDD2</color>
@@ -1386,7 +1386,7 @@
     <!-- From: file:/Users/seanholcomb/AndroidStudioProjects/xyzreader/XYZReader/src/main/res/values/styles.xml -->
     <eat-comment/>
     <style name="Theme.Bacon" parent="@style/Theme.AppCompat.Light.NoActionBar">
-
+        <item name="android:fontFamily">sans-serif-condensed</item>
     </style>
     <style name="Theme.Bacon.Detail">
         <item name="android:statusBarColor">@android:color/transparent</item>
@@ -1394,6 +1394,7 @@
     <style name="Theme.Meat" parent="@style/Theme.AppCompat.Light.DarkActionBar">
         <item name="colorPrimary">@color/theme_primary</item>
         <item name="android:actionBarStyle">@style/MeatActionBar</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
     </style>
     <!-- From: file:/Users/seanholcomb/AndroidStudioProjects/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values/values.xml -->
     <eat-comment/>
