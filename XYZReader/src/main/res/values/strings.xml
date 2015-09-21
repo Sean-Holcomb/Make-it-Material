@@ -9,4 +9,8 @@
 
     <string name="up">Up</string>
 
+    <string name="transition_img">img</string>
+    <string name="transition_title">title</string>
+    <string name="transition_subtitle">subtitle</string>
+
 </resources>

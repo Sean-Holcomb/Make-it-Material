@@ -193,7 +193,7 @@
     <item format="float" name="disabled_alpha_material_light" type="dimen">0.26</item>
     <!-- From: file:/Users/seanholcomb/AndroidStudioProjects/xyzreader/XYZReader/src/main/res/values/dimens.xml -->
     <eat-comment/>
-    <dimen name="fab_elevation">12dp</dimen>
+    <dimen name="fab_elevation">6dp</dimen>
     <dimen name="fab_margin">24dp</dimen>
     <dimen name="fab_press_translation_z">6dp</dimen>
     <!-- From: file:/Users/seanholcomb/AndroidStudioProjects/xyzreader/XYZReader/src/main/res/values/macro_layout.xml -->
@@ -244,6 +244,9 @@
     <string name="action_settings">Settings</string>
     <string name="action_share">Share</string>
     <string name="app_name">XYZ Reader</string>
+    <string name="transition_img">img</string>
+    <string name="transition_subtitle">subtitle</string>
+    <string name="transition_title">title</string>
     <string name="up">Up</string>
     <string name="welcome_xyz_reader">Welcome to XYZ Reader!</string>
     <!-- From: file:/Users/seanholcomb/AndroidStudioProjects/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values/values.xml -->
@@ -1386,7 +1389,7 @@
 
     </style>
     <style name="Theme.Bacon.Detail">
-        
+
     </style>
     <!-- From: file:/Users/seanholcomb/AndroidStudioProjects/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values/values.xml -->
     <eat-comment/>
