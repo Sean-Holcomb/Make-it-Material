@@ -25,4 +25,15 @@
         <item name="android:statusBarColor">@android:color/transparent</item>
     </style>
 
+    <style name="Theme.Meat" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+        <item name="colorPrimary">@color/theme_primary</item>
+        <item name="android:actionBarStyle">@style/MeatActionBar</item>
+    </style>
+
+    <!-- ActionBar styles -->
+    <style name="MeatActionBar"
+        parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
+        <item name="android:background">@color/theme_primary</item>
+    </style>
+
 </resources>
