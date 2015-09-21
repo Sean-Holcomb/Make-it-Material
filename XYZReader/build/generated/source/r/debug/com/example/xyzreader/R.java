@@ -1804,8 +1804,6 @@ containing a value of this type.
         public static final int Theme_AppCompat_Light_DialogWhenLarge=0x7f0e00af;
         public static final int Theme_AppCompat_Light_NoActionBar=0x7f0e00b0;
         public static final int Theme_AppCompat_NoActionBar=0x7f0e00b1;
-        /**  specify enter and exit transitions 
-         */
         public static final int Theme_Bacon=0x7f0e00b2;
         public static final int Theme_Bacon_Detail=0x7f0e00b3;
         public static final int ThemeOverlay_AppCompat=0x7f0e00b4;
@@ -1871,7 +1869,8 @@ containing a value of this type.
         public static final int Widget_AppCompat_Toolbar_Button_Navigation=0x7f0e00f0;
     }
     public static final class transition {
-        public static final int list_exit=0x7f060000;
+        public static final int detail_enter=0x7f060000;
+        public static final int list_exit=0x7f060001;
     }
     public static final class styleable {
         /** Attributes that can be used with a ActionBar.

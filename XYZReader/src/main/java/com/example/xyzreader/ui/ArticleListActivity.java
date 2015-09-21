@@ -1,5 +1,6 @@
 package com.example.xyzreader.ui;
 
+import android.app.Activity;
 import android.app.ActivityOptions;
 import android.app.LoaderManager;
 import android.content.BroadcastReceiver;
@@ -37,12 +38,13 @@ public class ArticleListActivity extends ActionBarActivity implements
     private Toolbar mToolbar;
     private SwipeRefreshLayout mSwipeRefreshLayout;
     private RecyclerView mRecyclerView;
+    private Activity mContext;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_article_list);
-
+        mContext=this;
         mToolbar = (Toolbar) findViewById(R.id.toolbar);
 
 
@@ -129,13 +131,21 @@ public class ArticleListActivity extends ActionBarActivity implements
         public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
             View view = getLayoutInflater().inflate(R.layout.list_item_article, parent, false);
             final ViewHolder vh = new ViewHolder(view);
+
+
             view.setOnClickListener(new View.OnClickListener() {
                 @Override
                 public void onClick(View view) {
-                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
+                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP && mContext != null) {
+                        ActivityOptions activityOptions =
+                                 ActivityOptions.makeSceneTransitionAnimation(
+                                         mContext,
+                                         vh.thumbnailView,
+                                         mContext.getString(R.string.transition_img)
+                                 );
                         startActivity(new Intent(Intent.ACTION_VIEW,
                                         ItemsContract.Items.buildItemUri(getItemId(vh.getAdapterPosition()))),
-                                ActivityOptions.makeSceneTransitionAnimation(getParent()).toBundle());
+                                activityOptions.toBundle());
                     }else{
                         startActivity(new Intent(Intent.ACTION_VIEW,
                                 ItemsContract.Items.buildItemUri(getItemId(vh.getAdapterPosition()))));
