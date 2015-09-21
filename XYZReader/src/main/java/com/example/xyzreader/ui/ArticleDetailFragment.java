@@ -42,7 +42,7 @@ public class ArticleDetailFragment extends Fragment implements
     private Cursor mCursor;
     private long mItemId;
     private View mRootView;
-    private int mMutedColor = 0xFF333333;
+    private int mMutedColor = 0xFFF44336;
     private ObservableScrollView mScrollView;
     private DrawInsetsFrameLayout mDrawInsetsFrameLayout;
     private ColorDrawable mStatusBarColorDrawable;
@@ -202,7 +202,7 @@ public class ArticleDetailFragment extends Fragment implements
                             Bitmap bitmap = imageContainer.getBitmap();
                             if (bitmap != null) {
                                 Palette p = Palette.generate(bitmap, 12);
-                                mMutedColor = p.getDarkMutedColor(0xFF333333);
+                                mMutedColor = p.getVibrantColor(0xFFF44336);
                                 mPhotoView.setImageBitmap(imageContainer.getBitmap());
                                 mRootView.findViewById(R.id.meta_bar)
                                         .setBackgroundColor(mMutedColor);

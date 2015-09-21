@@ -1387,11 +1387,12 @@
     <eat-comment/>
     <style name="Theme.Bacon" parent="@style/Theme.AppCompat.Light.NoActionBar">
         <item name="android:fontFamily">sans-serif-condensed</item>
+        <item name="colorPrimary">@color/theme_primary</item>
     </style>
     <style name="Theme.Bacon.Detail">
         <item name="android:statusBarColor">@android:color/transparent</item>
     </style>
-    <style name="Theme.Meat" parent="@style/Theme.AppCompat.Light.DarkActionBar">
+    <style name="Theme.Meat" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
         <item name="colorPrimary">@color/theme_primary</item>
         <item name="android:actionBarStyle">@style/MeatActionBar</item>
         <item name="android:fontFamily">sans-serif-condensed</item>
