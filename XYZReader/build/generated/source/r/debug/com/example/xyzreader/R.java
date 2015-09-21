@@ -1607,11 +1607,12 @@ containing a value of this type.
         public static final int action_settings=0x7f0d0011;
         public static final int action_share=0x7f0d0012;
         public static final int app_name=0x7f0d0013;
-        public static final int transition_img=0x7f0d0014;
-        public static final int transition_subtitle=0x7f0d0015;
-        public static final int transition_title=0x7f0d0016;
-        public static final int up=0x7f0d0017;
-        public static final int welcome_xyz_reader=0x7f0d0018;
+        public static final int transition_card=0x7f0d0014;
+        public static final int transition_img=0x7f0d0015;
+        public static final int transition_subtitle=0x7f0d0016;
+        public static final int transition_title=0x7f0d0017;
+        public static final int up=0x7f0d0018;
+        public static final int welcome_xyz_reader=0x7f0d0019;
     }
     public static final class style {
         public static final int Animation_AppCompat_DropDownUp=0x7f0e0000;

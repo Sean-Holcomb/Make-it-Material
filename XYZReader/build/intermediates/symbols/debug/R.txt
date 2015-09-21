@@ -528,11 +528,12 @@ int string action_refresh 0x7f0d0010
 int string action_settings 0x7f0d0011
 int string action_share 0x7f0d0012
 int string app_name 0x7f0d0013
-int string transition_img 0x7f0d0014
-int string transition_subtitle 0x7f0d0015
-int string transition_title 0x7f0d0016
-int string up 0x7f0d0017
-int string welcome_xyz_reader 0x7f0d0018
+int string transition_card 0x7f0d0014
+int string transition_img 0x7f0d0015
+int string transition_subtitle 0x7f0d0016
+int string transition_title 0x7f0d0017
+int string up 0x7f0d0018
+int string welcome_xyz_reader 0x7f0d0019
 int style Animation_AppCompat_DropDownUp 0x7f0e0000
 int style Base_Animation_AppCompat_DropDownUp 0x7f0e0001
 int style Base_TextAppearance_AppCompat 0x7f0e0002

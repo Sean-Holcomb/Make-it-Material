@@ -13,10 +13,12 @@ import android.os.Build;
 import android.os.Bundle;
 import android.support.v4.widget.SwipeRefreshLayout;
 import android.support.v7.app.ActionBarActivity;
+import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.StaggeredGridLayoutManager;
 import android.support.v7.widget.Toolbar;
 import android.text.format.DateUtils;
+import android.util.Pair;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
@@ -137,11 +139,13 @@ public class ArticleListActivity extends ActionBarActivity implements
                 @Override
                 public void onClick(View view) {
                     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP && mContext != null) {
+                        View thumb = vh.thumbnailView;
                         ActivityOptions activityOptions =
                                  ActivityOptions.makeSceneTransitionAnimation(
                                          mContext,
-                                         vh.thumbnailView,
-                                         mContext.getString(R.string.transition_img)
+                                         Pair.create(thumb, vh.thumbnailView.getTransitionName()),
+                                         Pair.create((View)vh.card, vh.card.getTransitionName())
+
                                  );
                         startActivity(new Intent(Intent.ACTION_VIEW,
                                         ItemsContract.Items.buildItemUri(getItemId(vh.getAdapterPosition()))),
@@ -182,9 +186,11 @@ public class ArticleListActivity extends ActionBarActivity implements
         public DynamicHeightNetworkImageView thumbnailView;
         public TextView titleView;
         public TextView subtitleView;
+        public CardView card;
 
         public ViewHolder(View view) {
             super(view);
+            card = (CardView) view;
             thumbnailView = (DynamicHeightNetworkImageView) view.findViewById(R.id.thumbnail);
             titleView = (TextView) view.findViewById(R.id.article_title);
             subtitleView = (TextView) view.findViewById(R.id.article_subtitle);
