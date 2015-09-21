@@ -45,6 +45,7 @@
                 android:contentDescription="@string/app_name"
                 android:layout_gravity="center_horizontal"/>
 
+
         </android.support.v7.widget.Toolbar>
     </FrameLayout>
 
