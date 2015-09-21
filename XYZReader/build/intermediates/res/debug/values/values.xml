@@ -1118,11 +1118,6 @@
     <style name="CardView.Light">
         <item name="cardBackgroundColor">@color/cardview_light_background</item>
     </style>
-    <!-- From: file:/Users/seanholcomb/AndroidStudioProjects/xyzreader/XYZReader/src/main/res/values/styles.xml -->
-    <eat-comment/>
-    <style name="MeatActionBar" parent="@android:style/Widget.Holo.Light.ActionBar.Solid.Inverse">
-        <item name="android:background">@color/theme_primary</item>
-    </style>
     <!-- From: file:/Users/seanholcomb/AndroidStudioProjects/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values/values.xml -->
     <eat-comment/>
     <style name="Platform.AppCompat" parent="android:Theme">
@@ -1388,14 +1383,10 @@
     <style name="Theme.Bacon" parent="@style/Theme.AppCompat.Light.NoActionBar">
         <item name="android:fontFamily">sans-serif-condensed</item>
         <item name="colorPrimary">@color/theme_primary</item>
+
     </style>
     <style name="Theme.Bacon.Detail">
-        <item name="android:statusBarColor">@android:color/transparent</item>
-    </style>
-    <style name="Theme.Meat" parent="@style/ThemeOverlay.AppCompat.Dark.ActionBar">
-        <item name="colorPrimary">@color/theme_primary</item>
-        <item name="android:actionBarStyle">@style/MeatActionBar</item>
-        <item name="android:fontFamily">sans-serif-condensed</item>
+        
     </style>
     <!-- From: file:/Users/seanholcomb/AndroidStudioProjects/xyzreader/XYZReader/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/res/values/values.xml -->
     <eat-comment/>

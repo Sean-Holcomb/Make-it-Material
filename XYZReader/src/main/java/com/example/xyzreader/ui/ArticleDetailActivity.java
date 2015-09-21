@@ -45,6 +45,7 @@ public class ArticleDetailActivity extends ActionBarActivity
             getWindow().getDecorView().setSystemUiVisibility(
                     View.SYSTEM_UI_FLAG_LAYOUT_FULLSCREEN |
                             View.SYSTEM_UI_FLAG_LAYOUT_STABLE);
+
         }
         setContentView(R.layout.activity_article_detail);
 
